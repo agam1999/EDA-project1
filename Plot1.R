@@ -24,4 +24,4 @@ t <- cbind(dateTime, t)
 ## Format dateTime Column
 t$dateTime <- as.POSIXct(dateTime)
 
-hist(t$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", col="red")
+plot(t$Global_active_power~t$dateTime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
